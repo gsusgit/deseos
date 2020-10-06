@@ -1,4 +1,6 @@
-import { ListaItem } from './lista-item-model';
+import { ListaItem } from './lista-item.model';
+
+
 
 export class Lista {
 
@@ -9,12 +11,18 @@ export class Lista {
     terminada: boolean;
     items: ListaItem[];
 
-    constructor(titulo: string) {
-        this.id = new Date().getTime();
+    constructor( titulo: string ) {
+
         this.titulo = titulo;
+
         this.creadaEn = new Date();
         this.terminada = false;
         this.items = [];
+
+        this.id = new Date().getTime();
+
     }
 
+
 }
+

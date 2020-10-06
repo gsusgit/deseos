@@ -1,19 +1,25 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { Routes, RouterModule } from '@angular/router';
 
 import { IonicModule } from '@ionic/angular';
 
-import { AgregarPageRoutingModule } from './agregar-routing.module';
-
 import { AgregarPage } from './agregar.page';
+
+const routes: Routes = [
+  {
+    path: '',
+    component: AgregarPage
+  }
+];
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    AgregarPageRoutingModule
+    RouterModule.forChild(routes)
   ],
   declarations: [AgregarPage]
 })

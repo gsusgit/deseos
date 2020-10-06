@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { DeseosService } from 'src/app/services/deseos.service';
+import { DeseosService } from '../../services/deseos.service';
 
 @Component({
   selector: 'app-tab2',
@@ -8,8 +8,8 @@ import { DeseosService } from 'src/app/services/deseos.service';
 })
 export class Tab2Page {
 
-  constructor(public deseosService: DeseosService) {
-    
+  constructor( public deseosService: DeseosService ) {
+
   }
 
 }
